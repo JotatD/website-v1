@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import AllProjects from "../components/projects/allProjects";
 
 const About = () => {
 	useEffect(() => {
@@ -30,8 +31,6 @@ const About = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<div class="stars"></div>
-				<div class="twinkling"></div> 
 				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
@@ -52,6 +51,7 @@ const About = () => {
 								</div>
 							</div>
 
+							<AllProjects/>
 							<div className="about-left-side">
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
