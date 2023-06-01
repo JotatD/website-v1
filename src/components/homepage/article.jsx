@@ -3,24 +3,41 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import {
+	faTwitter,
+	faGithub,
+	faStackOverflow,
+	faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./styles/article.css";
 
 const Article = (props) => {
-	const { title, description, date, link } = props;
+	const { title, description, header, link } = props;
 
 	return (
 		<React.Fragment>
 			<div className="homepage-article">
 				<div className="homepage-article-content">
 					<div className="homepage-article-date">
-						|&nbsp;&nbsp;&nbsp;{date}
-					</div>
+						{header}
+						<a className="homepage-article-logo"
+								href={link}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className="homepage-social-icon"
+								/>
+							</a>
+					</div> 
 					<div className="homepage-article-title">{title}</div>
 					<div className="homepage-article-description">
 						{description}
 					</div>
-					<div className="homepage-article-link">
+					{/* <div className="homepage-article-link">
 						<Link to={link}>
 							Read article{" "}
 							<FontAwesomeIcon
@@ -28,7 +45,7 @@ const Article = (props) => {
 								icon={faChevronRight}
 							/>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</React.Fragment>

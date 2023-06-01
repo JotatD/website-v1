@@ -8,14 +8,14 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./styles/article.css";
 
 const Article = (props) => {
-	const { title, description, date, link } = props;
+	const { title, description, header, link } = props;
 
 	return (
 		<React.Fragment>
 			<div className="homepage-project">
 				<div className="homepage-project-content">
 					<div className="homepage-project-date">
-						CSUY1010 Fundamentals of Machine Learning
+						{header}
 					</div>
 					<div className="homepage-project-title">{title}</div>
 					<div className="homepage-project-description">

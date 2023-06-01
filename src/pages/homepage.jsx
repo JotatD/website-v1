@@ -141,7 +141,7 @@ const Homepage = () => {
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
+											header={article().header}
 											title={article().title}
 											description={article().description}
 											link={"/article/" + (index + 1)}
