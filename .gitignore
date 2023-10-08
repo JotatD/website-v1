@@ -1,8 +1,6 @@
 CODE_OF_CONDUCT.md
 README.md
-package.json
 CONTRIBUTING.md
 node_modules
-package-lock.json	
 *.DS_Store
 /video
