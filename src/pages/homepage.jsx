@@ -99,7 +99,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src="homepage2.gif"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -145,6 +145,7 @@ const Homepage = () => {
 											title={article().title}
 											description={article().description}
 											link={"/article/" + (index + 1)}
+											github = {article().github}
 										/>
 									</div>
 								))}

@@ -2,17 +2,18 @@ import React from "react";
 
 function article_1() {
 	return {
-		header: "1010 Machine Learning",
+		header: "Summer 2023 - Undergraduate Research Program (side project)",
 		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		title: "Transformer Hacks",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"Transformers for applications to single agent reinforcement learning and time series foerecasting with Pytorch and Pandas.",
 		keywords: [
 			"The Benefits of Cloud Computing",
 			"Tharindu",
 			"Tharindu N",
 			"Tharindu Nayanajith",
 		],
+		github: 'https://github.com/JotatD/transformer_hacks',
 		style: `
 				.article-content {
 					display: flex;
@@ -42,12 +43,13 @@ function article_1() {
 
 function article_2() {
 	return {
-		header: "Summer 2022",
+		header: "Fall 2023 - Fundamentals of Machine Learning",
 		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
+		title: "Click-Through Rate Predictor",
 		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+			"Good old data processing and multiple classifications techniques (XGBoost, Random Forests, Perceptrons, and Regression) to predict whether costumers click on ads with Sklearn, Pytorch, Pandas and Seaborn used",
 		style: ``,
+		github: "https://github.com/JotatD/machine_learning/blob/main/ctr.ipynb",
 		keywords: [
 			"Artificial Intelligence in Healthcare",
 			"Tharindu",
@@ -62,6 +64,52 @@ function article_2() {
 	};
 }
 
-const myArticles = [article_1, article_2];
+function article_3() {
+	return {
+		header: "Summer 2022 - Hackathon",
+		date: "7 May 2023",
+		title: "Volatility and Return Calculator of Cryptoassets",
+		description:
+			"Volatility and return calculator of cryptoasset portfolio with Pandas and Streamlit. Winner of the third Jury's choice in the Daisi hackathon ",
+		style: ``,
+		github: "https://github.com/JotatD/hackathon",
+		keywords: [
+			"Artificial Intelligence in Healthcare",
+			"Tharindu",
+			"Tharindu N",
+			"Tharindu Nayanajith",
+		],
+		body: (
+			<React.Fragment>
+				<h1>Content of article 2</h1>
+			</React.Fragment>
+		),
+	};
+}
+
+function article_4() {
+	return {
+		header: "Fall 2022 - ",
+		date: "7 May 2023",
+		title: "Click-Through Rate Predictor",
+		description:
+			"Volatility and risk calculator of cryptoassets with Pandas and Streamlit. Winner of the third Jury's choice in the Daisi hackathon ",
+		style: ``,
+		github: "https://ieeextreme.org/ieeextreme-16-0-ranking/",
+		keywords: [
+			"Artificial Intelligence in Healthcare",
+			"Tharindu",
+			"Tharindu N",
+			"Tharindu Nayanajith",
+		],
+		body: (
+			<React.Fragment>
+				<h1>Content of article 2</h1>
+			</React.Fragment>
+		),
+	};
+}
+
+const myArticles = [article_1, article_2, article_3];
 
 export default myArticles;

@@ -37,6 +37,7 @@
 }
 
 .homepage-image-container {
+	padding-top: 2cm;
 	width: 370px;
 	height: 370px;
 }
@@ -45,10 +46,13 @@
 	overflow: hidden;
 	border-radius: 10%;
 	transform: rotate(3deg);
+	width: 120%;
+    height: auto;
 }
 
 .homepage-image-wrapper img {
 	width: 100%;
+	
 }
 
 .homepage-socials {
@@ -121,6 +125,10 @@
 	.homepage-first-area-right-side {
 		width: 100%;
 		order: 1;
+	}
+	.homepage-image-wrapper {
+		transform: rotate(0deg);
+		align-items: center;
 	}
 
 	.homepage-image-container {

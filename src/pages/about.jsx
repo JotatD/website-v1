@@ -33,12 +33,6 @@ const About = () => {
 			<div className="page-content">
 				<NavBar active="about" />
 				<div className="content-wrapper">
-					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-right-side">
@@ -47,21 +41,28 @@ const About = () => {
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+									{INFO.about.description1}
 								</div>
+								<div className="subtitle about-subtitle">
+									{INFO.about.description2}
+								</div>
+
+								<img class='read' src="reading list.png"/>
+
+
 							</div>
 
-							<AllProjects/>
 							<div className="about-left-side">
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
-										<img
-											src="about.gif"
+										<img class="bad-gif" 
+											src="bad.gif"
 											alt="about"
 											className="about-image"
 										/>
 									</div>
 								</div>
+
 
 								<div className="about-socials">
 									<Socials />

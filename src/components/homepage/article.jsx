@@ -14,7 +14,7 @@ import {
 import "./styles/article.css";
 
 const Article = (props) => {
-	const { title, description, header, link } = props;
+	const { title, description, header, link, github} = props;
 
 	return (
 		<React.Fragment>
@@ -23,7 +23,7 @@ const Article = (props) => {
 					<div className="homepage-article-date">
 						{header}
 						<a className="homepage-article-logo"
-								href={link}
+								href={github}
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -31,7 +31,7 @@ const Article = (props) => {
 									icon={faGithub}
 									className="homepage-social-icon"
 								/>
-							</a>
+						</a>
 					</div> 
 					<div className="homepage-article-title">{title}</div>
 					<div className="homepage-article-description">

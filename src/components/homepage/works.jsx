@@ -19,11 +19,23 @@ const Works = () => {
 								alt="facebook"
 								className="work-image"
 							/>
-							<div className="work-title">Undergraduate Summer Research Program</div>
+							<div className="work-title">Junior Fall Semester (NYU New York)</div>
 							<div className="work-subtitle">
-								Research Assistant
+								Math and CS
 							</div>
-							<div className="work-duration">Jun - August 2023</div>
+							<div className="work-duration">August - December 2023</div>
+						</div>
+						<div className="work">
+							<img
+								src="./nyu.png"
+								alt="facebook"
+								className="work-image"
+							/>
+							<div className="work-title">Student Research (NYU New York)</div>
+							<div className="work-subtitle">
+								Transformers and RCSL
+							</div>
+							<div className="work-duration">June - December TBD</div>
 						</div>
 					</div>
 				}

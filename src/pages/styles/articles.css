@@ -50,3 +50,14 @@
 		width: 100% !important;
 	}
 }
+
+.about-image{
+	border-radius: 10%;
+	
+}
+
+.read{
+	width: 70%;
+	height: auto;
+	margin: 5%;
+}
