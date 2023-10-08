@@ -4,3 +4,4 @@ CONTRIBUTING.md
 node_modules
 *.DS_Store
 /video
+/build
