@@ -2,6 +2,7 @@ import React from "react";
 
 function article_1() {
 	return {
+		arxiv: false,
 		header: "Summer 2023 - Undergraduate Research Program (side project)",
 		date: "7 May 2023",
 		title: "Transformer Hacks",
@@ -43,6 +44,7 @@ function article_1() {
 
 function article_2() {
 	return {
+		arxiv: false,
 		header: "Fall 2023 - Fundamentals of Machine Learning",
 		date: "7 May 2023",
 		title: "Click-Through Rate Predictor",
@@ -66,6 +68,7 @@ function article_2() {
 
 function article_3() {
 	return {
+		arxiv: false,
 		header: "Summer 2022 - Hackathon",
 		date: "7 May 2023",
 		title: "Volatility and Return Calculator of Cryptoassets",
@@ -89,27 +92,29 @@ function article_3() {
 
 function article_4() {
 	return {
-		header: "Fall 2022 - ",
-		date: "7 May 2023",
-		title: "Click-Through Rate Predictor",
-		description:
-			"Volatility and risk calculator of cryptoassets with Pandas and Streamlit. Winner of the third Jury's choice in the Daisi hackathon ",
-		style: ``,
-		github: "https://ieeextreme.org/ieeextreme-16-0-ranking/",
-		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
-		],
-		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
+	  arxiv: "https://arxiv.org/abs/2310.04579", // Change the value to true to display the logo
+	  header: "Summer 2023",
+	  date: "7 May 2023",
+	  title: "Self-Confirming transformer",
+	  description:
+		"Offline transformer trained to address online nonstationarity, motivated by the self-confirming equilibrium (SCE) in game theory",
+	  style: ``,
+	  github: "https://github.com/JotatD/Self-Confirming-Transformer",
+	  keywords: [
+		"Artificial Intelligence in Healthcare",
+		"Tharindu",
+		"Tharindu N",
+		"Tharindu Nayanajith",
+	  ],
+	  body: (
+		<React.Fragment>
+		  <h1>Content of article 2</h1>
+		</React.Fragment>
+	  ),
 	};
-}
+  }
+  
 
-const myArticles = [article_1, article_2, article_3];
+const myArticles = [article_4, article_1, article_2, article_3];
 
 export default myArticles;

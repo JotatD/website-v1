@@ -16,6 +16,11 @@
 	position: relative;
 	top: 4px;
 }
+
+.arxiv-logo{
+	margin-bottom: 0%;
+}
+
 .homepage-article-date {
 	opacity: 1;
 	color: var(--tertiary-color);

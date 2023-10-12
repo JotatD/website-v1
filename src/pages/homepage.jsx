@@ -139,6 +139,7 @@ const Homepage = () => {
 										className="homepage-article"
 										key={(index + 1).toString()}
 									>
+
 										<Article
 											key={(index + 1).toString()}
 											header={article().header}
@@ -146,6 +147,7 @@ const Homepage = () => {
 											description={article().description}
 											link={"/article/" + (index + 1)}
 											github = {article().github}
+											arxiv = {article().arxiv}
 										/>
 									</div>
 								))}
